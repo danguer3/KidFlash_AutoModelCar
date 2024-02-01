@@ -1,0 +1,15 @@
+1. Primer ventana
+        roscore
+2. Segunda ventana
+        rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+2. Tercer ventana
+        rostopic pub /leds std_msgs/Float32MultiArray "layout: dim:
+        - label: ''
+        size: 0
+        stride: 0
+        data_offset: 0
+        data:
+        - 3"
+
+  Este ultimo 3, puede ser un valor desde el 0 hasta el 4.
