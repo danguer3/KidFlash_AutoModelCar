@@ -1,1 +1,12 @@
+1. Primer ventana
+        roscore
 
+2. Segunda ventana
+        source ~/ros_open_cv_ws/devel/setup.bash
+	      rosrun ros_opencv camera_publisher.py
+
+2. Tercer ventana
+        source ~/ros_open_cv_ws/devel/setup.bash
+	      rosrun ros_opencv camera_subscriber.py
+
+Para salir de cualquiera basta con dar Ctrl+C
