@@ -1,7 +1,8 @@
 1. Primer ventana
         roscore
 2. Segunda ventana
-        rosrun rosserial_python serial_node.py /dev/ttyACM0
+        (Arduino Mega) rosrun rosserial_python serial_node.py /dev/ttyACM0
+        (Arduino Nano) rosrun rosserial_python serial_node.py /dev/ttyUSB3
 
 2. Tercer ventana
         rostopic pub /leds std_msgs/Float32MultiArray "layout: dim:
